@@ -28,9 +28,9 @@ curl -fsSL https://raw.githubusercontent.com/semeradoval/ares-dph-isir/main/inst
 V Claude Code stačí napsat:
 
 ```
-/ares-dph-isir 24165905
-/ares-dph-isir NEWIS TRADE
-/ares-dph-isir Boxaro Žamberk
+/ares-dph-isir 12345678
+/ares-dph-isir Ukázková firma s.r.o.
+/ares-dph-isir Testovací servis Novák
 ```
 
 ## Požadavky
@@ -41,10 +41,10 @@ V Claude Code stačí napsat:
 ## Skripty samostatně
 
 ```bash
-python3 scripts/ares_lookup.py --ico 24165905
-python3 scripts/ares_lookup.py --nazev "NEWIS TRADE" --limit 5
-python3 scripts/dph_check.py --ico 24165905
-python3 scripts/insolvence_check.py --ico 24165905
+python3 scripts/ares_lookup.py --ico 12345678
+python3 scripts/ares_lookup.py --nazev "Ukázková firma" --limit 5
+python3 scripts/dph_check.py --ico 12345678
+python3 scripts/insolvence_check.py --ico 12345678
 ```
 
 ## Licence
